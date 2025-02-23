@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer Cómputo - Aprendizajes</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            background: #9de3f1;
+            color: white;
+            padding: 20px;
+        }
+        .logo {
+            width: 180px;
+            height: auto;
+            margin-right: 20px;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h2 {
+            color: #005f73;
+        }
+        button {
+            background: #0a9396;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #94d2bd;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo de la página" class="logo">
+        <h1>Lo Aprendido en el Primer Cómputo</h1>
+    </header>
+    <main>
+        <section id="introduccion">
+            <h2>Introducción</h2>
+            <p>En este primer cómputo, hemos adquirido conocimientos fundamentales en HTML, CSS y JavaScript.</p>
+        </section>
+        <section id="contenido">
+            <h2>Temas Aprendidos</h2>
+            <ul>
+                <li>HTML: Estructura de una página web</li>
+                <li>CSS: Diseño y estilos</li>
+                <li>JavaScript: Interactividad y lógica</li>
+                <li>Uso básico de Git y GitHub</li>
+            </ul>
+        </section>
+        <section id="interactividad">
+            <h2>Interactividad</h2>
+            <button id="boton">Haz clic para un mensaje</button>
+            <p id="mensaje"></p>
+        </section>
+    </main>
+    <script>
+        document.getElementById("boton").addEventListener("click", function() {
+            document.getElementById("mensaje").innerText = "Bien hecho! Has aprendido mucho en este primer cómputo.";
+        });
+    </script>
+</body>
+</html>
